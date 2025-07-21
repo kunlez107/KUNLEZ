@@ -6,11 +6,11 @@ import fs from 'fs'
 import dotenv from 'dotenv'
 dotenv.config()
 
-const defaultOwner = '917849917350';
+const defaultOwner = '8147394224';
 
 
 // Check for the OWNERS environment variable; if not found, use the default
-const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || '917849917350' ; // put your number here
+const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || '8147394224' ; // put your number here
 
 const ownerlist = ownervb.split(';');
 
@@ -19,8 +19,8 @@ for (let i = 0; i < ownerlist.length; i++) {
     global.owner.push([ownerlist[i], true]);
 }
 //
-global.botname = process.env.BOTNAME || 'TOHID-AI';
-global.pairingNumber = process.env.BOT_NUMBER || '918930358452' ;  // put your number here
+global.botname = process.env.BOTNAME || 'Kunlez';
+global.pairingNumber = process.env.BOT_NUMBER || '8147394224' ;  // put your number here
 global.SESSION_ID = process.env.SESSION_ID || '' ;  // 8rNBBLqJ#OwDlq8HEuyXpl90PMysTRAG38-NVu7FOwUXgbXjWM1M
 global.mods = []
 global.prems = []
@@ -83,7 +83,7 @@ global.tohidImg = [imagen1, imagen2]
 
 
 // Sticker WM
-global.premium = 'true'
+global.premium = 'false'
 global.packname = 'TOHID-AI'
 global.author = 'Tohidkhan6332'
 global.menuvid = 'https://i.imgur.com/2Sp3cqD.mp4'
@@ -96,18 +96,17 @@ global.fglog = 'https://i.imgur.com/WnKjrJt.jpeg'
 global.thumb = fs.readFileSync('./assets/tohid.jpg')
 
 //Reactions
-global.wait = '*`⏰ 𝙷𝚘𝚕𝚍 𝙾𝚗 𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐...`*'
-global.imgs = '*🖼️ _𝙶𝙴𝚃𝚃𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 ɪᴍᴀɢᴇs 𝚆𝙰𝙸𝚃..._*\n*▰▰▰▱▱▱▱▱*'
-global.rwait = '⏳'
-global.dmoji = 'false'
-global.done = '✅'
-global.error = '❌' 
-global.xmoji = 'false' 
-global.multiplier = 69 
-global.maxwarn = '2' 
-global.eror = '```404 error```'
-//💌------------------------------------------💌
-
+global.wait = '*` `*'
+global.imgs = '*'
+global.rwait = ''
+global.dmoji = ''
+global.done = ''
+global.error = '' 
+global.xmoji = '' 
+global.multiplier =  
+global.maxwarn = '' 
+global.eror = ''
+//
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
